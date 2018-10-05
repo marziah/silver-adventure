@@ -9,30 +9,36 @@
 </head>
 <body>
     <h1>Apps FTW</h1>
-    <button onclick="sayHello()">Click Me</button>
-  
-   <p>
-       <label>
-       <input name="name" type="text">
-    </label>
-    </p> 
-    <P>
-        <label> Comments
-            <textarea ></textarea>
-        </label>
+           <form onsubmit="return handleSubmit(event), false;">
         
-    </P>
-    <p>
-        <label>
-            <input type="radio" name="grade">A
-        </label>
-        <label>
-            <input type="radio" name="grade">B
-        </label>
-        <label>
-            <input type="radio" name="grade">C
-        </label>
-    </p>
+        <p>
+            <label>
+            <input name="name" type="text">
+            </label>
+            </p> 
+            <P>
+                <label> comments
+                    <textarea ></textarea>
+                </label>
+                
+            </P>
+            <p>
+                <label>
+                    <input type="radio" name="grade">A
+                </label>
+                <label>
+                    <input type="radio" name="grade">B
+                </label>
+                <label>
+                    <input type="radio" name="grade">C
+                </label>
+            </p>
+
+            <button>
+                Submit
+            </button>
+        
+        </form>
 
     <script src="index.js"></script>
 </body>
